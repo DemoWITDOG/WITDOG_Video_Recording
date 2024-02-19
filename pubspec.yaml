@@ -1,0 +1,66 @@
+name: witdog_recodtester
+description: "witdog_recode"
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  audioplayers: ^5.2.1
+  flutter_riverpod: ^2.4.10
+  provider: ^6.1.1
+  record: ^5.0.4
+  supabase_flutter: ^2.3.3
+  logger: ^2.0.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/home_images/appbar_logo.png
+    - assets/images/home_images/main_card_image.png
+    - assets/images/home_images/recording_home.png
+    - assets/images/login_images/WITDOG.png
+    - assets/images/record_images/record_home_image.png
+    - assets/images/record_images/record_home_start_image.png
+    - assets/images/record_images/recording_body_top_start_image.png
+    - assets/images/record_images/recording_body_top_image.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

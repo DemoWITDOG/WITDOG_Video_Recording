@@ -4,6 +4,7 @@ class User {
   late String userName;
   late String userBank;
   late String userAccountNumber;
+  late String accountHolder;
   late String createdAt;
 
   User({
@@ -12,6 +13,7 @@ class User {
     required this.userName,
     required this.userBank,
     required this.userAccountNumber,
+    required this.accountHolder,
     required this.createdAt,
   });
 }

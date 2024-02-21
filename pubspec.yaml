@@ -37,6 +37,8 @@ flutter:
     - assets/images/record_images/record_home_start_image.png
     - assets/images/record_images/recording_body_top_start_image.png
     - assets/images/record_images/recording_body_top_image.png
+    - assets/images/record_images/recording_body_top_image.png
+    - assets/images/pet_images/pet_profile_card.png
 
 
 

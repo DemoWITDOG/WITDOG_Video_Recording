@@ -5,11 +5,15 @@ class MediaRes{
 
   // image getter
   static String get serviceInfoImage => _serviceInfoImage;
+  static String get mainCardImage => _mainCardImage;
   static String get logoImage => _logoImage;
+  static String get appbarLogoImage => _appbarLogoImagae;
   static String get recordHomeImage =>_recordHomeImage;
   static String get recordBodyTopImage => _recordBodyTopImage;
   static String get recordStartImage => _recordStartImage;
   static String get recordBodyTopStartImage => _recordBodyTopStartImage;
+  static String get petCardImage => _petCardImage;
+
 
   // color getter
   static int get blueColor => _blueColor;
@@ -21,6 +25,7 @@ class MediaRes{
   static int get mugwort => _mugwort;
   static int get whiteColor => _whiteColor;
 
+
   // font getter
   static FontWeight get mediumBold => _mediumBold;
   static FontWeight get semiBold => _semiBold;
@@ -31,14 +36,22 @@ class MediaRes{
   static const _baseLogin = 'assets/images/login_images';
   static const _baseRecord = 'assets/images/record_images';
   static const _baseHome = 'assets/images/home_images';
+  static const _basePet = 'assets/images/pet_images';
+
 
   static const _logoImage = '$_baseLogin/WITDOG.png';
+  static const _appbarLogoImagae = '$_baseHome/appbar_logo.png';
   static const _serviceInfoImage = '$_baseHome/recording_home.png';
+  static const _mainCardImage = '$_baseHome/main_card_image.png';
 
+  static const _petCardImage = '$_basePet/pet_profile_card.png';
   static const _recordHomeImage = '$_baseRecord/record_home_image.png';
   static const _recordBodyTopImage = '$_baseRecord/recording_body_top_image.png';
   static const _recordStartImage = '$_baseRecord/record_home_top_image.png';
   static const _recordBodyTopStartImage = '$_baseRecord/recording_body_top_start_image.png';
+
+
+
 
   // color
   static const _blueColor = 0xff0094FF;

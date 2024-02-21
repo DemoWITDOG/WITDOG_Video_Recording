@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 import 'package:witdog_recodtester/data/model/user.dart';
+import 'package:witdog_recodtester/presentation/res/media_res.dart';
 import 'package:witdog_recodtester/presentation/view/user_bank_view.dart';
 import 'package:witdog_recodtester/presentation/viewModel/user_viewModel.dart';
 
@@ -16,19 +17,52 @@ class UserNameView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Center(
+      body: Center(
+        child: Container(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              TextField(
-                controller: _nameController,
-                decoration: InputDecoration(
-                  labelText: '실명을 입력해 주세요',
+            children: [
+              Padding(
+                padding: EdgeInsets.zero,
+                child: Text(
+                  '이름을 입력해 주세요',
+                  style: TextStyle(
+                    fontSize: MediaRes.fontSize28,
+                    fontWeight: MediaRes.bold,
+                  ),
                 ),
               ),
-              SizedBox(height: 16),
+              SizedBox(height: 100),
+              Container(
+                width: 328,
+                child: TextField(
+                  controller: _nameController,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide:
+                      BorderSide(color: Color(MediaRes.whiteGrayColor)),
+                    ),
+                    hintText: '실명을 입력해 주세요',
+                    hintStyle:
+                    TextStyle(color: Color(MediaRes.whiteGrayTextColor)),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                        color: Color(MediaRes.whiteGrayTextColor),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                        color: Color(MediaRes.whiteGrayTextColor),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 41),
               ElevatedButton(
                 onPressed: () async {
                   await viewModel.addUser(
@@ -37,6 +71,7 @@ class UserNameView extends StatelessWidget {
                           userName: _nameController.text,
                           userBank: '',
                           userAccountNumber: '',
+                          accountHolder: '',
                           createdAt: '')
                   );
                   Navigator.pushReplacement(
@@ -47,7 +82,18 @@ class UserNameView extends StatelessWidget {
                   );
                   logger.i('사용자 추가 완료: ${_nameController.text}');
                 },
-                child: Text('다음'),
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(328, 56),
+                  backgroundColor: Color(MediaRes.mugwort),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),),
+                child: Text('다음',
+                  style: TextStyle(
+                    color: Color(MediaRes.whiteColor),
+                    fontSize: MediaRes.fontSize12,
+                  ),
+                ),
               ),
             ],
           ),

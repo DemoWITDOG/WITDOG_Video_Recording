@@ -15,6 +15,7 @@ class UserDataSource {
           'user_name': user.userName,
           'user_bank': user.userBank,
           'user_account_number': user.userAccountNumber,
+          'account_holder': user.accountHolder,
           'created_at': currentTime.toIso8601String(),
         }
       ]);

@@ -1,11 +1,11 @@
 import 'package:logger/logger.dart';
-import 'package:witdog_recodtester/data/model/recording.dart';
+import 'package:witdog_recodtester/data/model/video_recording.dart';
 import 'package:witdog_recodtester/presentation/utils/constants.dart';
 
-class RecordDataSource {
+class VideoRecordDataSource {
   final Logger _logger = Logger();
 
-  Future<void> petRecordAdd(Recording recording) async {
+  Future<void> petRecordAdd(VideoRecording recording) async {
     try {
       DateTime currentTime = DateTime.now();
 

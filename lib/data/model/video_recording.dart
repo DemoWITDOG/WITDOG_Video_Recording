@@ -1,10 +1,10 @@
-class Recording {
+class VideoRecording {
   late String id;
   late String petSoundRecord;
   late String createdAt;
   late String userId;
 
-  Recording({
+  VideoRecording({
     required this.id,
     required this.petSoundRecord,
     required this.createdAt,

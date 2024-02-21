@@ -14,11 +14,12 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   audioplayers: ^5.2.1
-  flutter_riverpod: ^2.4.10
   provider: ^6.1.1
   record: ^5.0.4
   supabase_flutter: ^2.3.3
   logger: ^2.0.2+1
+  image_picker: ^1.0.7
+  flutter_svg: ^2.0.9
 
 dev_dependencies:
   flutter_test:

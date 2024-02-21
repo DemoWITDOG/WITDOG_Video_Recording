@@ -49,4 +49,17 @@ class UserDataSource {
       print('Error: $e');
     }
   }
+
+  Future<String> getUserId(User user) async {
+    final response = await supabase.from('users').select().eq(
+        'user_id', user.userId).single();
+
+    if (response != null) {
+      final userData = response as Map<String, dynamic>;
+      final userId = userData['id'].toString();
+      return userId;
+    }
+    return 'defaultUserIdNull ';
+  }
+
 }

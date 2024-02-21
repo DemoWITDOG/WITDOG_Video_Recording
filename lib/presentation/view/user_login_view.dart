@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:witdog_recodtester/data/dataSource/user_data_source.dart';
 import 'package:witdog_recodtester/presentation/res/media_res.dart';
-import 'package:witdog_recodtester/presentation/view/home_view.dart';
 import 'package:witdog_recodtester/presentation/view/record_home_view.dart';
 import 'package:witdog_recodtester/presentation/view/user_view.dart';
 import 'package:witdog_recodtester/presentation/viewModel/user_viewModel.dart';

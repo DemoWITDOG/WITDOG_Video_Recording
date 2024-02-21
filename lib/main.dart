@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:witdog_recodtester/presentation/utils/constants.dart';
+import 'package:witdog_recodtester/presentation/view/pet_add_view.dart';
 import 'package:witdog_recodtester/presentation/view/record_home_view.dart';
 import 'package:witdog_recodtester/presentation/view/user_login_view.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: UserLoginView(),
+      home: PetAddView(),
     );
   }
 }
